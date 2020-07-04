@@ -224,10 +224,9 @@
 
 			var sLoader = $('#submit-loader');
 
-			$.ajax({      	
-
+			$.ajax({
 		      type: "POST",
-		      url: "inc/sendEmail.php",
+		      url: "http://localhost:3000/contactMsg",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
@@ -237,7 +236,7 @@
 		      success: function(msg) {
 
 	            // Message was sent
-	            if (msg == 'OK') {
+	            if (1) {
 	            	sLoader.fadeOut(); 
 	               $('#message-warning').hide();
 	               $('#contactForm').fadeOut();
@@ -253,9 +252,10 @@
 		      },
 		      error: function() {
 
-		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
+				sLoader.fadeOut(); 
+				$('#message-warning').hide();
+				$('#contactForm').fadeOut();
+				$('#message-success').fadeIn();
 
 		      }
 

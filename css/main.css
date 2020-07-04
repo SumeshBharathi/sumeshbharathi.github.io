@@ -1812,9 +1812,7 @@ header .logo a {
 	height: 9rem;
 	width: 9rem;
 	border-radius: 50%;
-	padding-left: 0.5rem;
 	text-align: center;
-	border: 1px solid black;
 	float: left;
 }
 
