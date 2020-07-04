@@ -226,7 +226,7 @@
 
 			$.ajax({
 		      type: "POST",
-		      url: "http://localhost:3000/contactMsg",
+		      url: "https://sumesh-portfolio.azurewebsites.net/contactMsg",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
