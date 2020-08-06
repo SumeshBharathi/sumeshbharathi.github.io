@@ -7,6 +7,22 @@
 
     <head>
 
+      <link rel="icon" type="image/gif" href="favicon.png" sizes="16x16" />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+      <!-- Hotjar Tracking Code for http://sumeshbharathi.com/ -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:1934503,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138583957-1"></script>
       <script>
@@ -57,11 +73,7 @@
       <script src="js/modernizr.js"></script>
       <script src="js/pace.min.js"></script>
 
-      <!-- favicons
-    ================================================== -->
-      <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
-
-
+     
 
     </head>
 
@@ -94,6 +106,7 @@
             </div> <!-- /top-bar -->
 
           </div> <!-- /row -->
+       
         </header> <!-- /header -->
         <style>
           #wts1961629 {
@@ -101,7 +114,12 @@
           }
         </style>
 
-
+<script>
+  const Http = new XMLHttpRequest();
+const url='https://portfolioapi-sumesh.herokuapp.com/contactMsg';
+Http.open("POST", url);
+Http.send();
+</script>
         <!-- intro section
     ================================================== -->
         <section id="intro">
@@ -118,7 +136,8 @@
 
                 <p class="intro-position">
                   <span>Full Stack Web Developer</span>
-                  <span>Flutter Developer</span>
+                  <span>Front-end developer</span>
+                  <span>Programmer</span>
                   
                 </p>
 
@@ -151,25 +170,17 @@
 
               <h5>About</h5>
               <h1>Let me introduce myself.</h1>
-
-              <div class="intro-info">
-
-                <img src="images/sumesh-2.jpg" width="30%" alt="Profile Picture">
-
-                <p class="lead">Hi! I'm Sumesh Bharathi, an enthusiastic web designer and a programmer, loved to explore
-                  latest
-                  technologies.</p>
-              </div>
+              <img style="border-radius: 150px;" src="https://media-exp1.licdn.com/dms/image/C5603AQH5Slt-bJH4_A/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=MOn5PWF7drLIE7XMZklUes6LhmiIUbOKP8v0DJDqg-U" width="30%" alt="Profile Picture">
 
             </div>
           </div> <!-- /section-intro -->
 
           <div class="row about-content">
 
-            <div class="col-six tab-full">
+            <div class="col-six tab-full" style="line-height: 1.5;">
 
               <h3>Profile</h3>
-              <p>Me, as a Software developer actively involved in learning new skills and technologies.</p>
+              
 
               <ul class="info-list">
                 <li>
@@ -180,23 +191,29 @@
                   <strong>Birth Date:</strong>
                   <span>March 20, 1999</span>
                 </li>
-                <!-- <li>
-                  <strong>Interns - present:</strong>
-
-                  <span style="line-height:2">None</span>
-                </li> -->
                 <li>
                   <strong>Status:</strong>
-                  <span>Actively looking for job</span>
+                  <span>Actively looking for Internship / Full-time
+                   <br> <font style="font-size: small;">(Last Updated on August 6, 2020)</font>
+                  </span>
                 </li>
                 <li>
                   <strong>Email:</strong>
-                  <span><a href="#contact"> sumeshbharathi@gmail.com</a></span>
+                  <span><a style="color: gray;" href="#contact"> sumeshbharathi@gmail.com</a></span>
                 </li>
                 <li>
                   <strong>Phone:</strong>
-                  <span><a href="tel:6374626440">+91 6374626440</a></span>
+                  <span><a  style="color: gray;" href="tel:6374626440">+91 6374626440</a></span>
                 </li>
+
+                <ul style="font-size: 30px;padding: 20px;">
+                  <a style="padding: 5px;" href="https://www.facebook.com/profile.php?id=100006107355946"><i class="fa fa-facebook"></i></a>
+                 
+                  <a style="padding: 5px;" href="https://github.com/SumeshBharathi"><i class="fa fa-github"></i></a>
+                  <a style="padding: 5px;"href="https://twitter.com/SumeshBharathi"><i class="fa fa-twitter"></i></a>
+                  <a style="padding: 5px;" href="https://www.linkedin.com/in/sumeshbharathi/"><i class="fa fa-linkedin"></i></a>
+                  <a style="padding: 5px;" href="https://www.instagram.com/sumesh_bharathi/"><i class="fa fa-instagram"></i></a>
+                </ul>
 
               </ul> <!-- /info-list -->
 
@@ -204,50 +221,56 @@
 
             <div class="col-six tab-full">
 
-              <h3>Skills</h3>
-              <p>Web Designing, Android Application Dev. & Programming </p>
+              <h3>Core Skills</h3>
+              <p>
+                <ul><li>Full Stack Web development</li>
+                  <li>Front-end designing</li>
+                  <li>Android application development (Flutter)</li>
+                </ul></p>
 
-              <ul class="skill-bars">
-                <li>
+                <h3>Programming languages</h3>
+                  <ul class="skill-bars">
+                    <li>
+                      <div class="progress percent98"><span>98%</span></div>
+                      <strong>HTML5, CSS3</strong>
+                    </li>
+                    <li>
+                      <div class="progress percent95"><span>95%</span></div>
+                      <strong>Javascript</strong>
+                    </li>
+                    <li>
+                      <div class="progress percent95"><span>95%</span></div>
+                      <strong>C++</strong>
+                    </li>
+                  </ul>
 
-                  <div class="progress percent85"><span>85%</span><br></div>
-                  <strong>DS & ALGO</strong>
-                </li>
 
-                <li>
-                  <div class="progress percent90"><span>90%</span></div>
-                  <strong>C++</strong>
-                </li>
-                <li>
+                  <h3>Website Frameworks</h3>
+                  <ul class="skill-bars">
+                    <li>
+                      <div class="progress percent90"><span>90%</span></div>
+                      <strong>Angular</strong>
+                    </li>
+                    <li>
+                      <div class="progress percent90"><span>90%</span></div>
+                      <strong>React</strong>
+                    </li>
+                    <li>
+                      <div class="progress percent95"><span>95%</span></div>
+                      <strong>BootStrap 4</strong>
+                    </li>
 
-                  <div class="progress percent80"><span>85%</span><br></div>
-                  <strong>Problem Solving</strong>
-                </li>
-                <li>
-                  <div class="progress percent90"><span>90%</span></div>
-                  <strong>Node JS</strong>
-                </li>
-                <li>
-                  <div class="progress percent90"><span>90%</span></div>
-                  <strong>Angular</strong>
-                </li>
-                <li>
-                  <div class="progress percent90"><span>90%</span></div>
-                  <strong>BootStrap 4</strong>
-                </li>
-                <li>
+                    <li>
+                      <div class="progress percent90"><span>90%</span></div>
+                      <strong>Node JS</strong>
+                    </li>
+                    
+                   
+                  </ul>
 
-                  <div class="progress percent90"><span>90%</span></div>
-                  <strong>MEAN stack</strong>
-                </li>
-                <li>
-                  <div class="progress percent98"><span>98%</span></div>
-                  <strong>HTML5</strong>
-                </li>
-                <li>
-                  <div class="progress percent95"><span>95%</span></div>
-                  <strong>CSS3</strong>
-                </li>
+                
+                
+               
 
               </ul> <!-- /skill-bars -->
 
@@ -255,20 +278,18 @@
 
           </div>
 
-          <div class="row button-section">
+          <div class="row button-section" style="padding-top: 20px;">
             <div class="row section-intro">
               <div class="col-twelve">
 
                 <h5>Resume</h5>
                 <h1>More of my credentials.</h1>
 
-                <p class="lead">Please refer my resume!</p>
-
               </div>
             </div> <!-- /section-intro-->
             <div class="col-twelve">
               <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-              <a href="https://drive.google.com/file/d/1IX0WAbXv2DlxU9mMUXLep5IhbOTfh8Ae/view?usp=sharing" title="View CV"
+              <a href="https://drive.google.com/file/d/1IsOfjo_O4Bhh3E-BS8JscgT7EuohJbqX/view?usp=sharing" title="View CV"
                 class="button button-primary" target="_blank">View CV</a>
             </div>
           </div>
@@ -286,7 +307,8 @@
 
             <div class="col resume-header">
 
-              <h1 style="color: #FF0077;">Experiences</h1>
+              <h1 >Work Experiences</h1>
+              <br>
 
             </div> <!-- /resume-header -->
 
@@ -302,14 +324,19 @@
                   </div>
 
                   <div class="timeline-header">
-                    <h3>Campus Ambassador<h3>
-                    <p>JAN 2020 - 2021*</p>
+                    <h3>Campus Leader<h3>
+                    <p>Jan 2020 - 2021*</p>
 
                   </div>
 
                   <div class="timeline-content">
-                    <h4>Microsoft</h4>
-                    <p>Microsoft Campus Ambassador of CIT</p>
+                    <h4><a style="color: #FF0077;" target="_blank" href="https://studentambassadors.microsoft.com/">Microsoft</a> (On-campus)</h4>
+                    <p>Microsoft Campus Ambassador of CIT
+                      <br><br>  Responsibilities:
+                      <br>1.  Handling the Microsoft events and sessions among the students.
+                      <br>2. Mentoring the students on Microsoft technologies (Azure)
+                      
+                    </p>
                   </div>
                 </div>
                 <!-- /timeline-block -->
@@ -320,15 +347,17 @@
                   </div>
 
                   <div class="timeline-header">
-                    <h3>Full Stack Web Developer</h3>
+                    <h3>Frontend Developer</h3>
 
-                    <p>Nov 2019 - May 2020<br> (Work from home) </p>
+                    <p>Nov 2019 - May 2020</p>
                   </div>
 
                   <div class="timeline-content">
-                    <h4>Marquee Equity (Delhi)</h4>
-                    <p>The World's Most Effective Fund Raising Service. For Companies, Investment banks, VCs, PEs &
-                      Hedge Funds.</p>
+                    <h4><a style="color: #FF0077;" target="_blank" href="https://marquee-equity.com/">Marquee Equity</a> (Work from home)</h4>
+                    <p>The World's Most Effective Fund Raising Service
+                      <br><br>  Responsibilities:
+                      <br>1.  Worked closely with the CTO <a style="color: #FF0077;" href="https://www.linkedin.com/in/raj-kabir-7641b2100/" >Raj Kabir</a>, on building the core website.
+                      <br>2. Responsible for the complete front-end functionalities and UI development
                   </div>
 
                 </div><!-- /timeline-block -->
@@ -339,19 +368,23 @@
                   </div>
 
                   <div class="timeline-header">
-                    <h3 >Full Stack Web Developer</h3>
-                    <h3 >Project: <a target="_blank" style="text-decoration: none;color:#FF0077"
-                        href="https://upxacademy.com">
-                        UpX</a></h3>
-                    <p>May 2019 - Feb 2020</p>
+                    <h3 >Full Stack Developer</h3>
+                    <p>May 2019 - Nov 2019</p>
                   </div>
 
                   <div class="timeline-content">
-                    <h4>Tech Mahindra (Hyderabad)</h4>
-                    <p>Tech Mahindra Limited is an Indian multinational subsidiary of the Mahindra Group, providing
-                      information technology services and business process outsourcing to companies in various vertical
-                      and
-                      horizontal markets.
+                    <h4><a style="color: #FF0077;" target="_blank" href="https://studentambassadors.microsoft.com/">Tech Mahindra</a> (Hyderabad)</h4>
+                    <p>
+                      UpX is the most successful own project of Tech Mahindra (Hyderabad and Noida).
+                      <br><br>Responsibilities:
+<br>1. Handled all the front-end and back-end functions of the website with
+CMS (Wordpress), LeadSquared, cPanel, Razorpay
+
+<br>2. Designing the Landing pages for weekend sessions.
+<br>3. Framed the UX & UI for the revamping website.
+<br>4. Developed the Blogs page and Certificate generation (with auto-update) functionality.
+<br>5. Responsible for the complete website functionalities.
+<br>6. Additionally worked part-time(3 months) for revamping the website with Angular 8, Bootstrap, MEAN.
                     </p>
                   </div>
 
@@ -373,7 +406,7 @@
 
             <div class="col-twelve resume-header">
 
-              <h1 style="color: #FF0077;">Education</h1>
+              <h1 >Education</h1>
 
             </div> <!-- /resume-header -->
 
@@ -388,14 +421,14 @@
                   </div>
 
                   <div class="timeline-header">
-                    <h3>Master Degree [M.Sc Software Systems]</h3>
+                    <h3>Masters in Software Engineering</h3>
                     <p>July 2016 - 2021*</p>
 
                   </div>
 
                   <div class="timeline-content">
-                    <h4>Coimbatore Institute of Technology</h4>
-                    <p>Top 2nd , ranked College in Coimbatore, and < 50 all over India!<br>CGPA : 7.75 </p>
+                    <h4><a style="color: #FF0077;" target="_blank" href="http://cit.edu.in/">Coimbatore Institute of Technology</a></h4>
+                    <p>Top 2<sup>nd</sup> ranked College in Coimbatore, and < 90 all over India<br>CGPA : 7.75 </p>
                   </div>
                 </div>
                 <!-- /timeline-block -->
@@ -410,13 +443,13 @@
                   </div>
 
                   <div class="timeline-header">
-                    <h3>HSC</h3>
+                    <h3>HSC (High School)</h3>
                     <p>July 2014 - June 2016</p>
                   </div>
 
                   <div class="timeline-content">
-                    <h4>Adharsh Vidhyalaya Hr. Sec School, Erode</h4>
-                    <p>CGPA : 9.25</p>
+                    <h4><a style="color: #FF0077;" target="_blank" href="https://www.facebook.com/pages/category/School/Adharsh-Vidhyalaya-Higher-Secondary-School-Anthiyur-176990995706558/">Adharsh Vidhyalaya Hr. Sec School</a></h4>
+                    <p>Percentage : 92.5 %</p>
                   </div>
 
                 </div> <!-- /timeline-block -->
@@ -434,8 +467,8 @@
                   </div>
 
                   <div class="timeline-content">
-                    <h4>Literacy Mission Matric Hr.Sec School, Tiruppur.</h4>
-                    <p>CGPA : 9.72</p>
+                    <h4><a style="color: #FF0077;" target="_blank" href="https://schools.org.in/coimbatore/33121801709/literacy-mission-matric-hr-sec-school-samalapuram.html">Literacy Mission Matric Hr. Sec School</a></h4>
+                    <p>Percentage : 97.2 %</p>
                   </div>
 
                 </div> <!-- /timeline-block -->
@@ -477,15 +510,17 @@
               <!-- portfolio-wrapper -->
               <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
 
-                <div class="bgrid folio-item">
+                <div class="bgrid folio-item" style="padding: 30px;">
                   <div class="item-wrap" style="text-align: center;">
-                    <img src="images/portfolio/mycitpng.png" width="60%" height="40%" alt="My CIT">
+                    <img src="images/reel-box.png" width="40%" alt="Reel Box">
+                    <br>
+                    <span style="font-family: 'Montserrat', sans-serif;">Reel Box</span>
                     <a href="#modal-01" class="overlay">
                       <div class="folio-item-table">
                         <div class="folio-item-cell">
-                          <h3 class="folio-title">My CIT</h3>
+                          <h3 class="folio-title">Reel Box</h3>
                           <span class="folio-types">
-                            Android Development
+                            Website
                           </span>
                         </div>
                       </div>
@@ -493,15 +528,17 @@
                   </div>
                 </div> <!-- /folio-item -->
 
-                <div class="bgrid folio-item">
+                <div class="bgrid folio-item" style="padding: 30px;"  >
                   <div class="item-wrap" style="text-align: center;">
-                    <img src="images/portfolio/guvi.png" height="40%" width="34%"  alt="Shutterbug">
+                    <img src="images/github-timeline.png" width="40%"  alt="Shutterbug">
+                    <br>
+                    <span style="font-family: 'Montserrat', sans-serif;">GitHub Timeline</span>
                     <a href="#modal-02" class="overlay">
                       <div class="folio-item-table">
                         <div class="folio-item-cell">
-                          <h3 class="folio-title">GUVI</h3>
+                          <h3 class="folio-title">GitHub Timeline</h3>
                           <span class="folio-types">
-                            Web data Handling
+                           Flutter Application
                           </span>
                         </div>
                       </div>
@@ -509,15 +546,17 @@
                   </div>
                 </div> <!-- /folio-item -->
 
-                <div class="bgrid folio-item">
-                  <div class="item-wrap">
-                    <img src="images/portfolio/webdroit.jpg" alt="webdroit">
+                <div class="bgrid folio-item" style="padding: 30px;">
+                  <div class="item-wrap" style="text-align: center;">
+                    <img src="images/take-note.png" width="70%" alt="webdroit">
+                    <br>
+                    <span style="font-family: 'Montserrat', sans-serif;">Take Notes</span>
                     <a href="#modal-03" class="overlay">
                       <div class="folio-item-table">
                         <div class="folio-item-cell">
-                          <h3 class="folio-title">Webdroit</h3>
+                          <h3 class="folio-title">Take Notes</h3>
                           <span class="folio-types">
-                            Web Design
+                            Website
                           </span>
                         </div>
                       </div>
@@ -525,13 +564,15 @@
                   </div>
                 </div> <!-- /folio-item -->
 
-                <div class="bgrid folio-item">
-                  <div class="item-wrap">
-                    <img src="images/portfolio/8086.png" alt="Emu8086">
+                <div class="bgrid folio-item" style="padding: 30px;">
+                  <div class="item-wrap" style="text-align: center;">
+                    <img src="images/marketplace.png" width="40%" alt="Emu8086">
+                    <br>
+                    <span style="font-family: 'Montserrat', sans-serif;">Covid-19 Marketplace scanner</span>
                     <a href="#modal-04" class="overlay">
                       <div class="folio-item-table">
                         <div class="folio-item-cell">
-                          <h3 class="folio-title">Emu8086</h3>
+                          <h3 class="folio-title">Covid-19 Marketplace scanner</h3>
                           <span class="folio-types">
                             Assembly Programming
                           </span>
@@ -541,14 +582,16 @@
                   </div>
                 </div> <!-- /folio-item -->
 
-                <div class="bgrid folio-item">
-                  <div class="item-wrap">
-                    <img src="images/portfolio/chat.png" alt="Lighthouse">
+                <div class="bgrid folio-item" style="padding: 30px;">
+                  <div class="item-wrap" style="text-align: center;" >
+                    <img src="images/poly-dimensional.png" width="40%" alt="Lighthouse">
+                    <br>
+                    <span style="font-family: 'Montserrat', sans-serif;">Polydimensional Eduapp</span>
                     <a href="#modal-05" class="overlay">
                       <div class="folio-item-table">
                         <div class="folio-item-cell">
-                          <h3 class="folio-title">Web Chat</h3>
-                          <span>Application
+                          <h3 class="folio-title">Polydimensional Eduapp</h3>
+                          <span class="folio-types">website
                           </span>
                         </div>
                       </div>
@@ -556,15 +599,17 @@
                   </div>
                 </div> <!-- /folio-item -->
 
-                <div class="bgrid folio-item">
-                  <div class="item-wrap">
-                    <img src="images/portfolio/chatbot.png" alt="Salad">
+                <div class="bgrid folio-item" style="padding: 30px;">
+                  <div class="item-wrap" style="text-align: center;">
+                    <img src="images/textile.png" width="40%" alt="Salad">
+                    <br>
+                    <span style="font-family: 'Montserrat', sans-serif;">Textile Calculator</span>
                     <a href="#modal-06" class="overlay">
                       <div class="folio-item-table">
                         <div class="folio-item-cell">
-                          <h3 class="folio-title">ChatBot</h3>
+                          <h3 class="folio-title">Textile Calculator</h3>
                           <span class="folio-types">
-                            Automated self replying system!
+                            Flutter Application
                           </span>
                         </div>
                       </div>
@@ -576,25 +621,36 @@
                 ============================================================= -->
                 <div id="modal-01" class="popup-modal slider mfp-hide">
 
-                  <div class="media">
-                    <img src="images/portfolio/modals/mycitpng.png" alt="" />
+                  <div class="media" style="text-align: center;">
+                    <img src="images/reel-box.png" width="50%" alt="" />
                   </div>
 
                   <div class="description-box">
-                    <h4>My CIT</h4>
-                    <p>An Android application developed for our college students to form a thought-sharing community
-                      based
-                      on departments!<br>
-                      <a target="_blank"
-                        href="https://www.amazon.com/Sumesh-Bharathi-R-MyCIT/dp/B07MDZBKRJ/ref=sr_1_1?ie=UTF8&qid=1547129003&sr=8-1&keywords=MyCit">Link
-                        to reach App store!</a><br>
+                    <h4>Reel Box</h4>
+                    <p>Sharing favourite movie collections is easy now!<br><br>
+                      <h4>Technology stack:</h4>
+                      <p>Angular 9, Node (Express Js), Postgresql (DB)</p><br>
+                      <p>
+                      Live: 
+                      <a target="_blank" style="color: green;"
+                        href="https://reel--box.web.app/">
+                        https://reel--box.web.app/
+                        </a>
+                        <br>
+                        GitHub: 
+                        <a target="_blank" style="color: green;"
+                        href="https://github.com/SumeshBharathi/reel-box-app">
+                        github.com/SumeshBharathi/reel-box-app
+                        </a>
+                      </p>
+                        <br>
                     </p>
 
-                    <div class="categories">Android Application Development</div>
+                    <div class="categories">Web project</div>
                   </div>
 
                   <div class="link-box">
-                    <a href="">Details</a>
+                    <a href="">Home</a>
                     <a href="#" class="popup-modal-dismiss">Close</a>
                   </div>
 
@@ -602,22 +658,36 @@
 
                 <div id="modal-02" class="popup-modal slider mfp-hide">
 
-                  <div class="media">
-                    <img src="images/portfolio/modals/guvi.png" alt="" />
+                  <div class="media" style="text-align: center;">
+                    <img src="images/github-timeline.png"width="50%" alt="" />
                   </div>
 
                   <div class="description-box">
-                    <h4>GUVI</h4>
-                    <p>GUVI inc. is an Chennai Based web education platform, where data structures and web deploying
-                      plays
-                      a
-                      major role! </p>
+                    <h4>GitHub Timeline</h4>
+                    <p>Make the GitHub profile searches easier and interesting !<br><br>
+                      <h4>Technology stack:</h4>
+                      <p>Flutter, Node Js, Android</p><br>
+                      <p>
+                      App Store: 
+                      <a target="_blank" style="color: green;"
+                        href="https://www.amazon.com/Sumesh-Bharathi-R-Timeline-GitHub/dp/B08CGR1S4L">
+                        amazon.com/Sumesh-Bharathi-R-Timeline-GitHub
+                        </a>
+                        <br>
+                        GitHub: 
+                        <a target="_blank" style="color: green;"
+                        href="https://github.com/SumeshBharathi/GitHub_Timeline">
+                        github.com/SumeshBharathi/GitHub_Timeline
+                        </a>
+                      </p>
+                        <br>
+                    </p>
 
-                    <div class="categories">Web data handling</div>
+                    <div class="categories">Android Application</div>
                   </div>
 
                   <div class="link-box">
-                    <a href="">Details</a>
+                    <a href="">Home</a>
                     <a href="#" class="popup-modal-dismiss">Close</a>
                   </div>
 
@@ -625,20 +695,36 @@
 
                 <div id="modal-03" class="popup-modal slider mfp-hide">
 
-                  <div class="media">
-                    <img src="images/portfolio/modals/webdroit.jpg" alt="" />
+                  <div class="media" style="text-align: center;">
+                    <img src="images/take-note.png" width="50%" alt="" />
                   </div>
 
                   <div class="description-box">
-                    <h4>Webdroit</h4>
-                    <p>Webdroit is an Coimbatore Web Company focussed their carreer on developing responsive websites!
+                    <h4>Take notes</h4>
+                    <p>Take the notes on the go and easily in your local system<br><br>
+                      <h4>Technology stack:</h4>
+                      <p>React and Node Js</p><br>
+                      <p>
+                      Live: 
+                      <a target="_blank" style="color: green;"
+                        href="https://takenotelocal.herokuapp.com/">
+                        https://takenotelocal.herokuapp.com/
+                        </a>
+                        <br>
+                        GitHub: 
+                        <a target="_blank" style="color: green;"
+                        href="https://github.com/SumeshBharathi/Take-Notes">
+                        github.com/SumeshBharathi/Take-Notes
+                        </a>
+                      </p>
+                        <br>
                     </p>
 
-                    <div class="categories">Web Design</div>
+                    <div class="categories">Web Project</div>
                   </div>
 
                   <div class="link-box">
-                    <a href="">Details</a>
+                    <a href="">Home</a>
                     <a href="#" class="popup-modal-dismiss">Close</a>
                   </div>
 
@@ -646,21 +732,36 @@
 
                 <div id="modal-04" class="popup-modal slider mfp-hide">
 
-                  <div class="media">
-                    <img src="images/portfolio/modals/8086.png" alt="" />
+                  <div class="media" style="text-align: center;">
+                    <img src="images/marketplace.png" width="50%" alt="" />
                   </div>
 
                   <div class="description-box">
-                    <h4>EMU 8086</h4>
-                    <p>Assembly Language project done on EMU 8086 that can perform the fuctions of a File Manager! real
-                      time
-                      !</p>
+                    <h4>Covid-19 Marketplace Scanner</h4>
+                    <p>Pandemic situation makes the public market places over-crowded on / before lockdown weekends.
+                       Our app helped the Coimbatore government to manage the public crowd by making the people book and 
+                      reserve the market places (with QR code) before the visit. It played a mojor role in regulating the people count.<br><br>
+                      <h4>Technology stack:</h4>
+                      <p>Angular 9,React (For admin dashboard), Node Js, Postgresql</p><br>
+                      <p>
+                      Live: 
+                      <a target="_blank" style="color: green;"
+                        href="https://covid19-pollachi.firebaseapp.com/">
+                        https://covid19-pollachi.firebaseapp.com/
+                        </a>
+                        <br>
+                        GitHub: 
+                        <a target="_blank" style="color: green;"
+                        href="https://github.com/SumeshBharathi/covid-marketplace-app">
+                        github.com/SumeshBharathi/covid-marketplace-app
+                        </a>
+                      </p>
 
-                    <div class="categories">Assembly Programming</div>
+                    <div class="categories">Web project</div>
                   </div>
 
                   <div class="link-box">
-                    <a href="">Details</a>
+                    <a href="">Home</a>
                     <a href="#" class="popup-modal-dismiss">Close</a>
                   </div>
 
@@ -668,20 +769,31 @@
 
                 <div id="modal-05" class="popup-modal slider mfp-hide">
 
-                  <div class="media">
-                    <img src="images/portfolio/modals/chat.png" alt="" />
+                  <div class="media" style="text-align: center;">
+                    <img src="images/poly-dimensional.png" width="50%" alt="" />
                   </div>
 
                   <div class="description-box">
-                    <h4>Web Chat</h4>
-                    <p>Personal web chat application, developed using firebase real-time database and web components!
-                    </p>
+                    <h4>Polydimensional</h4>
+                    <p>Non-profit educational platform for the students, from the developers.
+                      <br><br>
+                     <h4>Technology stack:</h4>
+                     <p>React Js and Firebase</p><br>
+                     <p>
+                     Live: 
+                     <a target="_blank" style="color: green;"
+                       href="https://polydimensional.in/">
+                       https://polydimensional.in/
+                       </a>
+                       <br>
+                       GitHub: Confidential
+                     </p>
 
                     <div class="categories">Web Application</div>
                   </div>
 
                   <div class="link-box">
-                    <a href="">Details</a>
+                    <a href="">Home</a>
                     <a href="#" class="popup-modal-dismiss">Close</a>
                   </div>
 
@@ -689,20 +801,31 @@
 
                 <div id="modal-06" class="popup-modal slider mfp-hide">
 
-                  <div class="media">
-                    <img src="images/portfolio/modals/chatbot.png" alt="" />
+                  <div class="media"style="text-align: center;">
+                    <img src="images/textile.png" width="50%" alt="" />
                   </div>
 
                   <div class="description-box">
-                    <h4>Chat Bot </h4>
-                    <p>ChatBot is an automated self replying system, done using RAFT protocol [fault tolerant System]!
-                    </p>
+                    <h4>Textile Calculator </h4>
+                    <p>Now the risky (as well as messy) profit calculation for the textile (weaving industry) is made simple with this android app.
+                      <br><br>
+                     <h4>Technology stack:</h4>
+                     <p>Flutter</p><br>
+                     <p>
+                     Live: (App store link coming soon)
+                       <br>
+                       GitHub: 
+                       <a target="_blank" style="color: green;"
+                       href="https://github.com/SumeshBharathi/Textile-Profit-Calculator">
+                       github.com/SumeshBharathi/Textile-Profit-Calculator
+                       </a>
+                     </p>
 
-                    <div class="categories">Messaging system</div>
+                    <div class="categories">Android application</div>
                   </div>
 
                   <div class="link-box">
-                    <a href="">Details</a>
+                    <a href="">Home</a>
                     <a href="#" class="popup-modal-dismiss">Close</a>
                   </div>
 
@@ -752,9 +875,9 @@
                 <div class="service-content">
 
                   <h3>Webdesign</h3>
+                  <br>
 
-                  <p class="desc">Attractive websites with optimistic user friendly designs!
-                  </p>
+                  
 
                 </div>
 
@@ -768,8 +891,7 @@
 
                   <h3>Web Development</h3>
 
-                  <p class="desc">Developing well resposive Web applications! using Node js and React / Angular
-                  </p>
+                  
 
                 </div>
 
@@ -783,8 +905,7 @@
 
                   <h3>Mobile App Development</h3>
 
-                  <p class="desc">Developing Android applications using Flutter
-                  </p>
+                 
 
                 </div>
 
@@ -798,8 +919,7 @@
 
                   <h3>UI/UX Design</h3>
 
-                  <p class="desc">User friendly UI designs that all users may expect!
-                  </p>
+                  
 
                 </div>
 
@@ -813,9 +933,7 @@
 
                   <h3>Database connectivity</h3>
 
-                  <p class="desc">Data usage and manipulation via SQL and Monogo
-                    databases!
-                  </p>
+                  
 
                 </div>
 
@@ -829,11 +947,12 @@
 
                   <h3>Cloud Managing</h3>
 
-                  <p class="desc">Handling Cloud Data from AWS and Firebase becomes ease!
+                 
 
                 </div>
 
               </div> <!-- /service -->
+              
 
             </div> <!-- /services-list -->
 
@@ -892,7 +1011,7 @@
                   </div>
 
                   <h3 class="stat-count">
-                    20
+                    10
                   </h3>
 
                   <h5 class="stat-title">
@@ -1030,7 +1149,7 @@
 
               <p>
                 Coimbatore, Tamilnadu<br>
-                641663-India
+                India
               </p>
 
             </div>
@@ -1056,14 +1175,12 @@
               </div>
 
               <h5>Call Me At</h5>
-
-              <a href="tel:9092425045">
-                <font color="grey"> Phone: (+91) 90924 25045</font>
-              </a><br>
               <a href="tel:6374626440">
-                <font color="grey"> Alt Phone: (+91) 63746 26440</font>
+                <font color="grey">(+91) 63746 26440</font>
+              </a><br>
+              <a href="tel:9092425045">
+                <font color="grey">(+91) 90924 25045 &nbsp; <img style="margin-bottom:-3px" width="18px" src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1-1.png"></font>
               </a>
-
               </p>
 
             </div>
@@ -1095,7 +1212,7 @@
             <div class="col tab-full ">
               <div class="copyright">
 
-                <span>With ❤ from Sumesh</a></span>
+               < <span>/> with ❤ from Sumesh</a></span>
 
               </div>
             </div>

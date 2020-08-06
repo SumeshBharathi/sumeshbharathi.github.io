@@ -75,7 +75,7 @@ body {
 
 body {
 	background: #151515;
-	font-family: "lora-regular", serif;
+	font-family: "Montserrat", serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
 	color: #6e6e6e;
@@ -197,7 +197,7 @@ p img {
 }
 
 p.lead {
-	font-family: "lora-regular", serif;
+	font-family: "Montserrat", serif;
 	font-size: 2rem;
 	line-height: 1.8;
 	color: #888888;
@@ -412,7 +412,7 @@ table {
 	border-width: 0;
 	width: 100%;
 	max-width: 100%;
-	font-family: "lora-regular", sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 th,
@@ -1354,7 +1354,7 @@ header .top-bar {
 	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
-	left: 90px;
+	left: 0px;
 	top: 0;
 }
 
@@ -1565,7 +1565,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+	background: #151515 url(https://www.wallpaperup.com/uploads/wallpapers/2014/02/17/257768/beb60b0a756ecec3a86143ccbbab6a1e.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1622,7 +1622,7 @@ header .logo a {
 }
 
 .intro-content .intro-position {
-	font-family: "lora-regular", serif;
+	font-family: "Montserrat", serif;
 	font-size: 1.7rem;
 	line-height: 2.4rem;
 	text-transform: uppercase;
@@ -1859,7 +1859,7 @@ header .logo a {
 	font-family: "poppins-regular", sans-serif;
 	color: #888888;
 	font-size: 1.5rem;
-	line-height: 1;
+	line-height: 2;
 }
 
 .about-content .skill-bars {
@@ -2477,7 +2477,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #services {
-	background: #313131 url(../images/bg.jpg) no-repeat center;
+	background: #313131 url(https://cdn.hipwallpaper.com/i/76/88/ECVS5h.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;

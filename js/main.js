@@ -226,7 +226,7 @@
 
 			$.ajax({
 		      type: "POST",
-		      url: "https://sumesh-portfolio.azurewebsites.net/contactMsg",
+		      url: "https://portfolioapi-sumesh.herokuapp.com/contactMsg",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
