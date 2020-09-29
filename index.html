@@ -62,8 +62,10 @@
     ================================================== -->
       <meta charset="utf-8">
       <title>It's Me Sumesh!</title>
-      <meta name="description" content="">
-      <meta name="author" content="">
+      <meta name="description" content="Welcome to Sumesh's site. Explore the things of his interest">
+      <meta name="keywords"
+        content="sumesh,sumesh bharathi,bharathi,sumeshbharathi,sumesh-bharathi,sumesh bharathi ramasamy,sumesh portfolio">
+      <meta name="author" content="Sumesh Bharathi Ramasamy">
 
       <!-- mobile specific metas
     ================================================== -->
@@ -1117,7 +1119,7 @@
           </div> <!-- /section-intro -->
 
           <script>
-             var xhttp = new XMLHttpRequest();
+            var xhttp = new XMLHttpRequest();
             xhttp.open("POST", "https://portfolioapi-sumesh.herokuapp.com/contactMsgApp", true);
             xhttp.setRequestHeader("Content-Type", "application/json");
             xhttp.onreadystatechange = function () {
@@ -1130,25 +1132,27 @@
               sub: '\n\n Some one visited Oh!!!\n\n',
             };
             xhttp.send(JSON.stringify(data));
-        
 
-            function send(){
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", "https://portfolioapi-sumesh.herokuapp.com/contactMsgApp", true);
-            xhttp.setRequestHeader("Content-Type", "application/json");
-            xhttp.onreadystatechange = function () {
-              if (this.readyState == 4 && this.status == 200) {
-                var response = this.responseText;
-                // console.log(response)
-              }
-            };
-            var data = {
-              
-              sub: '\n\n Name: \n' + document.getElementById('name').value + '\n\n Sub:\n' + document.getElementById('name').value
-              + '\n\n Emailid: \n'+document.getElementById('email').value + ' \n\n Msg: \n' + document.getElementById('msg').value + '\n\n',
-            };
-            xhttp.send(JSON.stringify(data));
-          }
+
+            function send() {
+              var xhttp = new XMLHttpRequest();
+              xhttp.open("POST", "https://portfolioapi-sumesh.herokuapp.com/contactMsgApp", true);
+              xhttp.setRequestHeader("Content-Type", "application/json");
+              xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                  var response = this.responseText;
+                  // console.log(response)
+                }
+              };
+              var data = {
+
+                sub: '\n\n Name: \n' + document.getElementById('name').value + '\n\n Sub:\n' + document
+                  .getElementById('name').value +
+                  '\n\n Emailid: \n' + document.getElementById('email').value + ' \n\n Msg: \n' + document
+                  .getElementById('msg').value + '\n\n',
+              };
+              xhttp.send(JSON.stringify(data));
+            }
           </script>
 
 
