@@ -1565,7 +1565,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(https://www.wallpaperup.com/uploads/wallpapers/2014/02/17/257768/beb60b0a756ecec3a86143ccbbab6a1e.jpg) no-repeat center bottom;
+	background: #151515 url(../images/bgimage.webp) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -2477,7 +2477,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #services {
-	background: #313131 url(https://cdn.hipwallpaper.com/i/76/88/ECVS5h.jpg) no-repeat center;
+	/* background: #313131 url(https://www.wallpaperup.com/uploads/wallpapers/2014/02/17/257768/beb60b0a756ecec3a86143ccbbab6a1e.jpg) no-repeat center; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
