@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google" content="notranslate" />
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+
+
+
+    <script src="./js/sampleData.js" async></script>
+    <script src="./js/mapRender.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"
+        async>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"
+        async>
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" async></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsm-CYvOtgNlI-MISFLNSUiZIi6zPzhqI&callback=initMap&libraries=&v=weekly"
+        async></script>
+
+
+</head>
+
+
+
+<body>
+
+
+    <style>
+        @import url("./css/general.css");
+    </style>
+
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none; width: 80%!important;" id="mySidebar">
+        <div onclick="nav_close()" class="mt-3" style="width: 95%;text-align: end;"><img src="assets/close.png"
+                style="width: 18px;" alt="">
+        </div>
+        <span class="m-4" style="font-size: 16px;"><span style="font-size: 12px;">Logged in as</span>
+            <br /><b class="m-4">dev@orocorp.in</b></span>
+
+        <div class="p-3 m-1"
+            style="border-bottom: 1px solid #F0F0F0; padding-top: 30px!important;padding-bottom: 30px!important;">
+            All Partners
+            <img style="position: absolute; right: 5%;" src="assets/navArrow.png" alt="">
+        </div>
+
+        <div class="p-3 m-1" style="padding-top: 30px!important;padding-bottom: 30px!important;">
+            Logout
+            <img style="position: absolute; right: 5%;" src="assets/navArrow.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="container" style="font-family: 'Nunito Sans', sans-serif;">
+        <div class="col">
+            <div class="row nav-row" style="height: 80px;border: 1px rgb(241, 241, 241) solid;">
+                <img src="assets/snackbar.png" onclick="nav_open()" class="snackbar" alt="">
+                <img src="assets/logo.png" class="img-fluid m-2 pt-2 logo" alt="">
+                <div class="m-3 nav-callpartners" onclick="scrolltoTop()"
+                    style="width: 70px;margin-top: 20px!important;position: absolute; right: 5%">
+                    <span class="p-2 d-inline"
+                        style="width: 70px;background:  #FFC351;font-size: 10px; color: black;font-weight: bold; border-radius: 20px;padding-left: 15px!important;padding-right: 15px!important;">
+                        All&nbsp;Partners </span></div>
+
+                <div class="col-sm-2">
+
+
+                </div>
+                <div class="col nav-email"></div>
+                <div class="col-sm-5 nav-email" style="text-align: end;font-size:16px;" onclick="{console.log('hey')}">
+                    <span>Logged in as <b>dev@orocorp.in</b></span>
+
+                    <button type="button" class="btn btn-danger m-3"
+                        style="background: #CF2121;font-size: 14px; color: white;font-weight: bold;"><span
+                            class="ps-3 pe-3"> Logout </span></button>
+
+
+
+                </div>
+
+            </div>
+            <div class="nav-dummy-block" id="topDiv" style="display:none;">
+                <br>
+                <br>
+                <br>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-3 partnersBuffer" id=""
+                    style="border: 1px solid rgb(241, 241, 241);padding-left: 0;padding-right: 0; ">
+                    <div class="ps-4 pe-4 pt-3 pb-3 partnersSearch" style="background-color: #F0F0F0">
+                        <img class="pe-3" src="assets/search.png" alt="">
+                        <input type="text" id="searchInput"
+                            style="border: transparent;outline-color: transparent;background-color: transparent;width: 60%;"
+                            placeholder="Search Partners" oninput="handleValueChange()" class="txt_input p-1">
+
+                    </div>
+                    <div id="partnersBufferId"
+                        style="height: 780px;overflow: scroll;scrollbar-width: thin;overflow-x: hidden;">
+
+                    </div>
+                </div>
+                <div class="col  ps-3 ps-3 " id="partnersDetail" style="background-color: #F8F8F8;">
+                    <div id="partnerTopBlock">
+                        <br />
+                        <br />
+
+
+                    </div>
+                    <br>
+                    <b>PARTNER DETAILS</b>
+                    <div class="row p-3 m-2" style="border: 1px rgb(199, 199, 199) solid;background-color: white;">
+                        <div class="col-sm-3 partnerBlock">
+                            <span class="partnerRes" style="font-size: 12px;font-weight: 400;">NAME</span>
+                            <br />
+                            <span class="partnerVal" id='partnerName' style="font-size: 16px;font-weight: bold;"></span>
+                        </div>
+                        <div class="col-sm-2 partnerBlock">
+                            <span class="partnerRes" style="font-size: 12px;font-weight: 400;">PARTNER ID</span>
+                            <br />
+                            <span class="partnerVal" id="partnerId" style="font-size: 16px;font-weight: bold;"></span>
+                        </div>
+                        <div class="col-sm-2 partnerBlock">
+                            <span class="partnerRes" style="font-size: 12px;font-weight: 400;">MOBILE NUMBER</span>
+                            <br />
+                            <span class="partnerVal" id="partnerMob" style="font-size: 16px;font-weight: bold;"></span>
+                        </div>
+                        <div class="col-sm-2 partnerBlock">
+                            <span class="partnerRes" style="font-size: 12px;font-weight: 400;">STATUS</span>
+                            <br />
+                            <span class="partnerVal" id="partnerStatus"
+                                style="font-size: 16px;font-weight: bold;"></span>
+                        </div>
+                        <div class="col-sm-3 partnerBlockBtn">
+
+                            <a href="" id="telephoneAnchor" class="p-2 ps-3 pe-3 callPartner"
+                                style="text-decoration: none;color: #000;cursor: pointer; position: relative;top: 12px; font-size: 12px;font-weight: 800; border-radius: 40px;background: linear-gradient(165.33deg, #F9CA36 22.08%, #F8B830 87.9%);">Call&nbsp;Partner</a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="p-2">
+                        <div id="map" style="height: 480px; width: 100%;"></div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col-sm-6 stopCol1" style="padding-right: 0px;padding-left: 0px;">
+
+                            <div class="row p-2 m-2 mb-3 stopBlock"
+                                style="border: 1px solid rgb(199, 199, 199);background-color: white;">
+
+                                <div class="col-sm-3 ">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">STOP
+                                        NO.</span><br />
+                                    <span class="stopValue" style="font-size: 16px;font-weight: bold;">1</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">LAT</span><br />
+                                    <span class="stopValue" id="lat1"
+                                        style="font-size: 16px;font-weight: bold;">74.215489</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">LONG</span><br />
+                                    <span class="stopValue" id="long1"
+                                        style="font-size: 16px;font-weight: bold;">80.965452</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">TIME</span><br />
+                                    <span class="stopValue" id="time1" style="font-size: 16px;font-weight: bold;">01:35
+                                        PM</span>
+                                </div>
+                            </div>
+
+                            <div class="row p-2 m-2 stopBlock"
+                                style="border: 1px solid rgb(199, 199, 199);background-color: white;">
+
+                                <div class="col-sm-3 ">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">STOP
+                                        NO.</span><br />
+                                    <span class="stopValue" style="font-size: 16px;font-weight: bold;">3</span>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">LAT</span><br />
+                                    <span class="stopValue" id="lat3"
+                                        style="font-size: 16px;font-weight: bold;">74.215489</span>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">LONG</span><br />
+                                    <span class="stopValue" id="long3"
+                                        style="font-size: 16px;font-weight: bold;">80.965452</span>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">TIME</span><br />
+                                    <span class="stopValue" id="time3" style="font-size: 16px;font-weight: bold;">01:35
+                                        PM</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6 stopCol2" style="padding-right: 0px;padding-left: 0px;">
+                            <div class="row p-2 m-2 mb-3 stopBlock"
+                                style="border: 1px solid rgb(199, 199, 199);background-color: white;">
+
+                                <div class="col-sm-3 ">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">STOP
+                                        NO.</span><br />
+                                    <span class="stopValue" style="font-size: 16px;font-weight: bold;">2</span>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">LAT</span><br />
+                                    <span class="stopValue" id="lat2"
+                                        style="font-size: 16px;font-weight: bold;">74.215489</span>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">LONG</span><br />
+                                    <span class="stopValue" id="long2"
+                                        style="font-size: 16px;font-weight: bold;">80.965452</span>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">TIME</span><br />
+                                    <span class="stopValue" id="time2" style="font-size: 16px;font-weight: bold;">01:35
+                                        PM</span>
+                                </div>
+                            </div>
+
+                            <div class="row p-2 m-2 stopBlock"
+                                style="border: 1px solid rgb(199, 199, 199);background-color: white;">
+
+                                <div class="col-sm-3 ">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">STOP
+                                        NO.</span><br />
+                                    <span class="stopValue" style="font-size: 16px;font-weight: bold;">4</span>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">LAT</span><br />
+                                    <span class="stopValue" id="lat4"
+                                        style="font-size: 16px;font-weight: bold;">74.215489</span>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">LONG</span><br />
+                                    <span class="stopValue" id="long4"
+                                        style="font-size: 16px;font-weight: bold;">80.965452</span>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <span class="stopHead" style="font-size: 12px;color: #575757;">TIME</span><br />
+                                    <span class="stopValue" id="time4" style="font-size: 16px;font-weight: bold;">01:35
+                                        PM</span>
+                                </div>
+                            </div>
+
+
+                            <div class="stopBlockMobileHolder">
+                                <img src="assets/arrow.png" onclick="cardRight()" style="width:15px;height: 15px;position: relative;    left: 93%;
+                                    margin-bottom: -156px; " alt="">
+
+                                <div class="row p-2 m-2 stopBlockMobileCustom"
+                                    style="border: 1px solid rgb(199, 199, 199);background-color: white;">
+
+
+                                    <div class="col-sm-3 stopBlockMobileCustomDiv">
+                                        <span class="stopHead" style="font-size: 12px;color: #575757;">STOP
+                                            NO.</span><br />
+                                        <span class="stopValue" id="field1"
+                                            style="font-size: 16px;font-weight: bold;">3</span>
+                                    </div>
+                                    <div class="col-sm-3 stopBlockMobileCustomDiv">
+                                        <span class="stopHead" style="font-size: 12px;color: #575757;">LAT</span><br />
+                                        <span class="stopValue" id="field2"
+                                            style="font-size: 16px;font-weight: bold;">74.215489</span>
+                                    </div>
+                                    <div class="col-sm-3 stopBlockMobileCustomDiv">
+                                        <span class="stopHead" style="font-size: 12px;color: #575757;">LONG</span><br />
+                                        <span class="stopValue" id="field3"
+                                            style="font-size: 16px;font-weight: bold;">80.965452</span>
+                                    </div>
+                                    <div class="col-sm-3 stopBlockMobileCustomDiv">
+                                        <span class="stopHead" style="font-size: 12px;color: #575757;">TIME</span><br />
+                                        <span class="stopValue" id="field4"
+                                            style="font-size: 16px;font-weight: bold;">01:35 PM</span>
+                                    </div>
+                                </div>
+
+                                <img src="assets/leftArrow.png" onclick="cardLeft()" style="width:15px;height: 15px;position: relative;    left: 4%;
+                                    margin-top: -141px; " alt="">
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <script type="text/javascript" src="./js/partnerDetails.js" async defer></script>
+
+
+
+</body>
+
+</html>

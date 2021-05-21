@@ -1,0 +1,89 @@
+/* for mobile devices */
+@media (min-width: 200px) and (max-width: 599px) {
+    body {
+        background-color: #F8F8F8;
+    }
+
+    .snackbar {
+        width: 45px;
+        height: 13px;
+        display: block;
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+
+    .logo {
+
+        height: 39px;
+        width: 88px;
+        position: absolute;
+        left: 35%;
+    }
+
+    .nav-email {
+        display: none;
+    }
+
+    .nav-row {
+        height: 60px !important;
+        background-color: white;
+        width: 100%;
+        position: fixed;
+    }
+
+    .partnerBufferArrow {
+        width: 30%;
+        text-align: center;
+    }
+
+    .partnersBuffer {
+        margin-top: 0px;
+    }
+
+    .nav-dummy-block {
+        display: block !important;
+    }
+
+    .partnersSearch {
+        display: none;
+    }
+
+    .partnerBlock {
+        width: 50%;
+        padding: 13px !important;
+    }
+
+    .partnerBlockBtn {
+        text-align: center;
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .stopBlock {
+        display: none;
+    }
+
+    .stopBlockMobileCustomDiv {
+        width: 50%;
+    }
+
+    .stopBlockMobileCustom {
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+
+    .partnersBufferDefiner {
+        background-color: white !important;
+        border: 0px solid rgb(199, 199, 199) !important;
+        margin: 15px !important;
+    }
+
+    #map {
+        margin-top: 30px;
+    }
+
+    #partnersDetail {
+        margin-top: 0px;
+    }
+
+}

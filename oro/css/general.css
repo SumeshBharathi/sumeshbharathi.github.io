@@ -1,0 +1,49 @@
+@import url("./mobileOpt.css");
+@import url("./tabOpt.css");
+@import url("./lapOpt.css");
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+
+/* updates styles with device-size */
+@media (min-width: 600px) {
+    .snackbar {
+        display: none;
+    }
+
+    .nav-callpartners {
+        display: none;
+    }
+
+    .logo {
+        width: 120px;
+        height: 50px;
+    }
+
+    .partnerBlockBtn {
+        text-align: end;
+    }
+
+    .stopBlockMobileCustom {
+        display: none;
+    }
+
+    .stopBlockMobileHolder {
+        display: none;
+    }
+
+}
