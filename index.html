@@ -102,7 +102,7 @@
 
     <script>
       const Http = new XMLHttpRequest();
-      const url = 'https://mysumesh.centralindia.cloudapp.azure.com/portfolio/ping';
+      const url = 'https://portfolio-tracker-api.azurewebsites.net/ping';
       Http.open("POST", url);
       Http.send();
     </script>
@@ -1336,7 +1336,7 @@
 
 
           var xhttp = new XMLHttpRequest();
-          xhttp.open("POST", "https://mysumesh.centralindia.cloudapp.azure.com/portfolio/contact", true);
+          xhttp.open("POST", "https://portfolio-tracker-api.azurewebsites.net/contact", true);
           xhttp.setRequestHeader("Content-Type", "application/json");
           xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
