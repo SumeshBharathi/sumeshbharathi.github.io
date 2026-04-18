@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Use This Card</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0a0a0a;
+      color: #e5e5e5;
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 15px;
+      margin-bottom: 56px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      margin: 48px 0 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #1e1e1e;
+    }
+
+    p { color: #aaa; margin-bottom: 16px; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 16px;
+    }
+
+    ul li {
+      color: #aaa;
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: #444;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #1e1e1e;
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin: 24px 0;
+    }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th {
+      text-align: left;
+      color: #555;
+      font-weight: 500;
+      padding: 8px 12px 8px 0;
+      border-bottom: 1px solid #1e1e1e;
+    }
+
+    td {
+      color: #aaa;
+      padding: 10px 12px 10px 0;
+      border-bottom: 1px solid #161616;
+      vertical-align: top;
+    }
+
+    td:first-child { color: #ddd; font-weight: 500; }
+
+    a { color: #7b8cde; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .highlight {
+      color: #7b8cde;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 72px;
+      padding-top: 28px;
+      border-top: 1px solid #1a1a1a;
+      color: #444;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="badge">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Last updated: April 18, 2026 &nbsp;·&nbsp; Use This Card</p>
+
+    <p>
+      Use This Card ("we", "our", or "us") is committed to protecting your privacy.
+      This policy explains what information we collect, how we use it, and the choices
+      you have. By using the app you agree to the practices described here.
+    </p>
+
+    <!-- 1 -->
+    <h2>1. Information We Collect</h2>
+
+    <div class="card">
+      <div class="card-title">Stored only on your device</div>
+      <table>
+        <thead>
+          <tr><th>Data</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Your saved credit cards</td>
+            <td>Identify which cards are in your wallet so we can recommend the best one for each purchase category.</td>
+          </tr>
+          <tr>
+            <td>Widget category preferences</td>
+            <td>Determine which spending categories appear on your home screen widget.</td>
+          </tr>
+          <tr>
+            <td>Onboarding completion flag</td>
+            <td>Skip the welcome screens on subsequent launches.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Collected by third-party services</div>
+      <table>
+        <thead>
+          <tr><th>Data</th><th>Service</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Anonymous usage events</td>
+            <td>Firebase Analytics (Google)</td>
+            <td>Understand which features are used so we can improve the app.</td>
+          </tr>
+          <tr>
+            <td>Credit card catalog</td>
+            <td>Cloud Firestore (Google)</td>
+            <td>Fetch the latest card reward rates and benefits. No personal data is sent.</td>
+          </tr>
+          <tr>
+            <td>Crash &amp; diagnostic data</td>
+            <td>Firebase (Google)</td>
+            <td>Detect and fix technical issues.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      We do <span class="highlight">not</span> collect your name, email address,
+      phone number, financial account details, or any other personally identifiable
+      information. The credit cards you add to your wallet are stored exclusively on
+      your device using iOS's secure local storage.
+    </p>
+
+    <!-- 2 -->
+    <h2>2. Device Sensors</h2>
+    <p>
+      The app uses your device's accelerometer to create interactive tilt effects on
+      card visuals. Sensor readings are processed entirely on-device in real time and
+      are never stored or transmitted.
+    </p>
+
+    <!-- 3 -->
+    <h2>3. Home Screen Widget</h2>
+    <p>
+      The home screen widget reads your saved cards and category preferences from
+      shared local storage (App Groups) to display your best card recommendation
+      without opening the app. This data never leaves your device.
+    </p>
+
+    <!-- 4 -->
+    <h2>4. Background Refresh</h2>
+    <p>
+      The app periodically runs a background task (at most once per hour, subject to
+      iOS scheduling) to fetch the latest card catalog from Firestore and refresh
+      your widget. Only the card catalog — no personal data — is downloaded during
+      this process.
+    </p>
+
+    <!-- 5 -->
+    <h2>5. App Tracking Transparency</h2>
+    <p>
+      On iOS 14.5 and later, we ask for permission to track your activity across
+      other apps and websites using Apple's App Tracking Transparency framework.
+      If you allow tracking, Firebase Analytics may use your device's advertising
+      identifier (IDFA) to provide aggregated, anonymised analytics.
+      If you decline, analytics continues without the IDFA. You can change your
+      choice at any time in <strong>Settings → Privacy &amp; Security → Tracking</strong>.
+    </p>
+
+    <!-- 6 -->
+    <h2>6. Third-Party Services</h2>
+    <ul>
+      <li>
+        <strong>Google Firebase</strong> — Analytics, Firestore, and performance
+        monitoring. Governed by
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+          Google's Privacy Policy
+        </a>.
+      </li>
+    </ul>
+    <p>
+      We do not sell, trade, or otherwise transfer your information to any other
+      third parties.
+    </p>
+
+    <!-- 7 -->
+    <h2>7. Data Retention</h2>
+    <p>
+      Data stored on your device remains until you delete the app or clear app data
+      in iOS Settings. Anonymous analytics data retained by Firebase follows
+      Google's standard retention schedule (up to 14 months by default).
+    </p>
+
+    <!-- 8 -->
+    <h2>8. Children's Privacy</h2>
+    <p>
+      Use This Card is not directed at children under the age of 13. We do not
+      knowingly collect personal information from children. If you believe a child
+      has provided us with personal information, please contact us and we will
+      promptly delete it.
+    </p>
+
+    <!-- 9 -->
+    <h2>9. Your Rights</h2>
+    <ul>
+      <li>
+        <strong>Access &amp; deletion</strong> — All personal preferences are stored
+        on your device. Delete the app to remove all local data instantly.
+      </li>
+      <li>
+        <strong>Opt out of analytics</strong> — Disable analytics in
+        <strong>Settings → Privacy &amp; Security → Tracking</strong> or by using
+        Apple's "Limit Ad Tracking" option.
+      </li>
+      <li>
+        <strong>CCPA / GDPR</strong> — Because we do not collect personally
+        identifiable information, most data subject rights (access, portability,
+        erasure) are satisfied by deleting the app.
+      </li>
+    </ul>
+
+    <!-- 10 -->
+    <h2>10. Changes to This Policy</h2>
+    <p>
+      We may update this policy from time to time. Material changes will be
+      communicated via an in-app notice or an App Store update note. Continued use
+      of the app after changes are posted constitutes your acceptance of the
+      revised policy.
+    </p>
+
+    <!-- 11 -->
+    <h2>11. Contact Us</h2>
+    <p>
+      If you have any questions or concerns about this privacy policy, please
+      contact us at:<br />
+      <a href="mailto:privacy@usethiscard.app">privacy@usethiscard.app</a>
+    </p>
+
+    <footer>
+      <span>© 2026 Use This Card. All rights reserved.</span>
+      <span>Use This Card · v1.0</span>
+    </footer>
+
+  </div>
+</body>
+</html>
